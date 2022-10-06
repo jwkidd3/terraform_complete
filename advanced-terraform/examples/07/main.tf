@@ -1,0 +1,1 @@
+variable "student_alias" {}

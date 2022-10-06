@@ -1,0 +1,15 @@
+{
+  "builders": [
+    {
+      "type": "file",
+      "content": "artifact",
+      "target": "./artifact.txt"
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "checksum",
+      "output": "./artifact.sum"
+    }
+  ]
+}

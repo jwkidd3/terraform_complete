@@ -1,0 +1,5 @@
+username       = "christianhxc"
+token          = "Q7yihgxgstSWsvUpgM9d"
+secret         = "TBb1ST8ZlX"
+git_host       = "gitlab.com"
+repository     = "di-tf-advanced"

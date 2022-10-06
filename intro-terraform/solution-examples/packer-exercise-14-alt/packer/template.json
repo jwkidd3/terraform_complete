@@ -1,0 +1,24 @@
+{
+  "variables": {
+    "region": null,
+    "ami_name": null,
+    "source_ami_id": null
+  },
+  "builders": [
+    {
+      "name": "force-exercise-14",
+      "type": "amazon-ebs",
+      "region": "{{ user `region` }}",
+      "source_ami": "{{ user `source_ami_id` }}",
+      "instance_type": "t2.micro",
+      "ssh_username": "ubuntu",
+      "ami_name": "{{ user `ami_name` }}"
+    }
+  ],
+  "provisioners": [
+  	{
+  	  "type": "shell",
+  	  "scripts": ["./provision.sh"]
+  	}
+  ]
+}

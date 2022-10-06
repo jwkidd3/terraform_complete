@@ -1,0 +1,12 @@
+{
+  "variables": {
+    "content": "var-1"
+  },
+  "builders": [
+    {
+      "type": "file",
+      "content": "{{ user `content` | replace \"var\" \"VAR\" -1 }}",
+      "target": "./artifact-functions.txt"
+    }
+  ]
+}

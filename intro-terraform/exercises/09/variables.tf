@@ -8,10 +8,14 @@ variable "student_alias" {
 variable "object_count" {
   type        = number
   description = "number of dynamic objects/files to create in the bucket"
-  default     = 2
+  default     = 3
 }
 
 variable "include_optional_file" {
   type        = bool
-  default     = false
+  default     = true
+}
+
+variable "aws_region"{
+  
 }

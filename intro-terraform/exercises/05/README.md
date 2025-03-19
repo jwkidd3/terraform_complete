@@ -19,7 +19,6 @@ workshop, we've used the AWS provider.
 
  ```hcl
  provider "aws" {
-     version = "~> 2.0"
      region = "${var.region_alt}"
      alias = "alternate"
  }

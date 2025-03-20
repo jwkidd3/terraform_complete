@@ -3,19 +3,19 @@
 # A Terraform data source is a specific type of resource that gives us the ability to pull in data from elsewhere to
 # use in our own terraform HCL and operations
 data "aws_ami" "ubuntu" {
-	most_recent = true
+  most_recent = true
 
-	filter {
+  filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"]
-	}
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+  }
 
-	filter {
+  filter {
     name   = "virtualization-type"
     values = ["hvm"]
-	}
+  }
 
-	owners = ["099720109477"] # Canonical
+  owners = ["099720109477"] # Canonical
 }
 
 # Another AWS provider data source, giving us the ability to get all of the AZs in our current region

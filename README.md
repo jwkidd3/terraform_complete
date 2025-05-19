@@ -1,1 +1,1 @@
-# terraform-advanced-workshop
+# terraform-complete-workshop
